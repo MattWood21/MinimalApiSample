@@ -23,7 +23,7 @@ namespace MinimalApiSample.Services
             app.MapGet(BaseRoute, GetAllPosts)
                 .WithName("GetAllPosts");
 
-            app.MapGet(BaseRoute + "{id}", GetPost)
+            app.MapGet(BaseRoute + "/{id}", GetPost)
                 .WithName("GetPost");
         }
 
