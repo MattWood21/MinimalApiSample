@@ -1,1 +1,1 @@
-MinimalApiSample
+This project is an example .Net 6 [Minimal API](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-6.0). 
