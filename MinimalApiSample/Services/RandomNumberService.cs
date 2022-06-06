@@ -15,6 +15,14 @@ namespace MinimalApiSample.Services
             _random = new Random();
         }
 
-        public int RandomNumber => _random.Next();
+        public int GetNext()
+        {
+            // You can do this in better ways, this adds thread safety though
+            // The random number is just for "demonstration" purposes anyhow
+            lock(_random)
+            {
+                return _random.Next();
+            }
+        }
     }
 }

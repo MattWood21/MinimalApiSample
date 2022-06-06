@@ -25,7 +25,7 @@ namespace MinimalApiSample.Services
 
         private IResult GetAllBlogs()
         {
-            return Results.Ok(new { Blog = "testBlog" + _randomNumberService.RandomNumber });
+            return Results.Ok(new { Blog = "testBlog" + _randomNumberService.GetNext() });
         }
     }
 }

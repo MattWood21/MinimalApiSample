@@ -29,7 +29,7 @@ namespace MinimalApiSample.Services
 
         private IResult GetAllPosts()
         {
-            return Results.Ok(new { Post = "testPost" + _randomNumberService.RandomNumber });
+            return Results.Ok(new { Post = "testPost" + _randomNumberService.GetNext() });
         }
 
         private IResult GetPost(int id)
