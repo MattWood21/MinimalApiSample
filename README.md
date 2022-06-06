@@ -1,1 +1,3 @@
-This project is an example .Net 6 [Minimal API](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-6.0). 
+This project is an example .Net 6 [Minimal API](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-6.0).
+
+Probably the most interesting part of it is the use of IRouteableService in order to wire up any service that wants to route API traffic to that endpoint. The service itself is responsible for declaring which paths and methods are allowed and how to respond to incoming requests. It acts as a smaller/minimal alternative to using Controllers in the MVC model.
